@@ -1,21 +1,11 @@
 {
   "name": "naofumi",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "module": "src/index.ts",
+  "type": "module",
   "devDependencies": {
-    "@types/node": "^20.10.6",
-    "eslint": "^8.56.0",
-    "prettier": "^3.1.1",
-    "typescript": "^5.3.3"
+    "bun-types": "latest"
   },
-  "dependencies": {
-    "discord.js": "^14.14.1"
+  "peerDependencies": {
+    "typescript": "^5.0.0"
   }
 }
