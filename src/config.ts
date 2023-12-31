@@ -4,11 +4,11 @@ export class Config {
         private static instance: Config;
 
         public token: string;
-        public guildID: string;
+        public guildID?: string;
         
         private constructor() {
                 this.token = getenv('TOKEN');
-                this.guildID = getenv('GUILD_ID');
+                this.guildID = process.env.GUILD_ID;
         }
 
         /**

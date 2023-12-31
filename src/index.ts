@@ -9,6 +9,8 @@ const bot: Bot = new Bot();
 bot.on('ready', () => {
         bot.addCommand(new PingCommand(), config.guildID);
         bot.handleCommands();
+
+        console.log(`Logged in as ${bot.user?.tag}!`);
 })
 
 bot.login(config.token);
